@@ -1,0 +1,83 @@
+body {
+  background-color: white;
+}
+
+.navbar.scrolled {
+  background-color: black;
+  transition: background-color 300ms linear;
+}
+#first-slide {
+  position: relative;
+  max-height: 100vh;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+.introduction {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.introduction h1 {
+  font-size: 4.5rem;
+}
+
+.introduction p {
+  font-size: 2rem;
+}
+
+.content {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.content h2 {
+  font-size: 2rem;
+}
+
+.about-img {
+  width: 70%;
+}
+
+@media (max-width: 1000px) {
+  .introduction h1 {
+    font-size: 2.5rem;
+  }
+
+  .introduction p {
+    font-size: 1.5rem;
+  }
+}
+
+.service {
+  border: 1px solid #dee2e6;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.service h3 {
+  margin: 0.5rem 0;
+}
+.service p {
+  margin-bottom: 0;
+}
+
+.portfolio {
+  border: 1px solid #dee2e6;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+
+footer {
+  height: 3rem;
+}
+
+footer i {
+  color: black;
+  font-size: 2rem;
+  margin: 0px 0.4rem;
+}

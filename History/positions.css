@@ -1,0 +1,70 @@
+.circle {
+  width: 50px;
+  height: 50px;
+  background-color: darkmagenta;
+  transition: border-radius 5s, background-color 1s;
+}
+
+h1 {
+  height: auto;
+  width: 300px;
+  background-color: tomato;
+  color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+  font-size: large;
+  margin: 20px auto;
+  text-align: center;
+  padding: 15px 0px;
+  border: 4px solid black;
+  transition: 2s;
+}
+
+h1:nth-of-type(2n) {
+  background-color: brown;
+}
+
+h1:nth-of-type(3n) {
+  background-color: cornflowerblue;
+}
+
+h1:nth-of-type(1) {
+  transform: skew(30deg, 20deg);
+}
+
+.circle:hover {
+  background-color: darkblue;
+  border-radius: 50%;
+}
+
+#box div {
+  width: 80px;
+  height: 80px;
+  margin: 20px 0px;
+  background-color: darkcyan;
+  transition: margin-left 3s;
+}
+
+#box:hover div {
+  margin-left: 200px;
+}
+
+#box div:nth-of-type(1) {
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#box div:nth-of-type(2) {
+  transition-timing-function: ease-out;
+}
+
+#box div:nth-of-type(3) {
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+#box div:nth-of-type(4) {
+  transition-timing-function: ease-in;
+}
+
+#box div:nth-of-type(5) {
+  transition-timing-function: ease-in;
+}

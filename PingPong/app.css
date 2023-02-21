@@ -1,0 +1,16 @@
+#score span {
+  font-size: 2rem;
+}
+
+#game-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.wins {
+  color: rgb(70, 154, 70);
+}
+
+.loose {
+  color: rgb(222, 75, 75);
+}

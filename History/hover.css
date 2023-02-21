@@ -1,0 +1,35 @@
+body {
+  height: 100vh;
+  background-color: darkslategrey;
+}
+
+section {
+  height: 60%;
+  width: 60%;
+  margin: 0px auto;
+  background-color: darkgray;
+  background: center/cover
+    url("https://images.unsplash.com/photo-1661961110144-12ac85918e40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=1400&q=60");
+}
+
+h1 {
+  font-size: 3em;
+  color: white;
+}
+
+button {
+  background: none;
+  color: darkcyan;
+  border: 2px solid;
+  padding: 1em 2em;
+  font-size: 1em;
+  transition: 0.25s;
+}
+
+button:hover {
+  border-color: darkturquoise;
+  color: white;
+  box-shadow: 0 0.5em 0.5em darkturquoise;
+  transform: translateY(-0.25em);
+  cursor: pointer;
+}

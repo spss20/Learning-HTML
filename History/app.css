@@ -1,0 +1,31 @@
+body {
+  background-color: cyan;
+  height: 100vh;
+}
+
+section {
+  width: 50%;
+  height: 50%;
+  margin: auto auto;
+}
+
+h1,
+h2 {
+  color: teal;
+  text-align: center;
+  font-weight: 400;
+  text-decoration: underline wavy green 1px;
+  letter-spacing: 5px;
+  font-size: 80px;
+  text-transform: uppercase;
+  font-family: Itim, cursive;
+}
+
+p {
+  line-height: 1.5;
+}
+
+#contents {
+  color: lightcoral;
+  font-size: 40px;
+}

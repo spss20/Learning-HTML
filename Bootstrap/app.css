@@ -1,0 +1,9 @@
+.color {
+  background-color: #712cf926;
+  border: 1px solid #712cf94d;
+}
+
+.bd-example [class^="col"] {
+  background-color: #712cf926;
+  border: 1px solid #712cf94d;
+}
