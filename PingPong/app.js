@@ -54,10 +54,8 @@ function reset() {
 
     score_1.innerText = '0';
     score_2.innerText = '0';
-    score_1.classList.remove('wins');
-    score_2.classList.remove('wins');
-    score_1.classList.remove('loose');
-    score_2.classList.remove('loose');
+    score_1.classList.remove('wins', 'loose');
+    score_2.classList.remove('wins', 'loose');
 
     start.parentElement.classList.toggle('d-none');
     player_one_btn.parentElement.classList.toggle('d-none');
@@ -76,8 +74,8 @@ function updateScore(context) {
         console.log("Player TWO");
         current_score_2++;
     }
-    score_1.innerText = current_score_1.toString();
-    score_2.innerText = current_score_2.toString();
+    score_1.textContent = current_score_1;
+    score_2.textContent = current_score_2;
 
     if (current_score_1 === playing_points || current_score_2 === playing_points) {
         if (current_score_1 === playing_points) {
