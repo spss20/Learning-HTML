@@ -6,6 +6,8 @@ const start = document.querySelector('#start');
 const player_one_btn = document.querySelector("#player-one");
 const player_two_btn = document.querySelector("#player-two");
 const reset_btn = document.querySelector("#reset");
+const toast = document.querySelector('#liveToast');
+let warning_timout;
 
 player_one_btn.parentElement.classList.toggle('d-none');
 player_two_btn.parentElement.classList.toggle('d-none');
@@ -19,19 +21,32 @@ player_two_btn.addEventListener('click', function (e) {
     updateScore(this);
 });
 
-start.addEventListener('click', function () {
+start.addEventListener('click', start_game);
+reset_btn.addEventListener('dblclick', reset);
+reset_btn.addEventListener('click', () => {
+    clearTimeout(warning_timout);
+    warning_timout = setTimeout(() => {
+        toast.classList.remove('hide');
+        toast.classList.add('show');
+
+        setTimeout(() => {
+            toast.classList.remove('show');
+            toast.classList.add('hide');
+        }, 700);
+    }, 300);
+});
+
+function start_game() {
     console.log("START CLICKED");
     pong_level.disabled = true;
     reset_btn.disabled = false;
     start.parentElement.classList.toggle('d-none');
     player_one_btn.parentElement.classList.toggle('d-none');
     player_two_btn.parentElement.classList.toggle('d-none');
-});
-
-reset_btn.addEventListener('dblclick', reset);
-reset_btn.addEventListener('longclick', reset);
+}
 
 function reset() {
+    clearTimeout(warning_timout);
     player_one_btn.disabled = false;
     player_two_btn.disabled = false;
     pong_level.disabled = false;
